@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "e55820f0-acb2-4207-b1ce-b71f97e8e4f9",
+		"name": "carpartsdemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get parts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8091/api/parts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"api",
+						"parts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search parts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"parts\" : [\r\n        \"2W1223\",\r\n        \"1ET1-316\",\r\n        \"D11BS1A\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8091/api/parts/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"api",
+						"parts",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create parts",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"number\" : \"2W1223\",\r\n        \"name\" : \"part1\",\r\n        \"price\" : 100.0,\r\n        \"weight\" : 10\r\n    },\r\n    {\r\n        \"number\" : \"1ET1-316\",\r\n        \"name\" : \"part1\",\r\n        \"price\" : 200.0,\r\n        \"weight\" : 20\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8091/api/parts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"api",
+						"parts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete parts",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"parts\" : [\r\n        \"2W1223\",\r\n        \"1ET1-316\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8091/api/parts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"api",
+						"parts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
