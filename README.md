@@ -24,7 +24,7 @@ NB: tested in Windows PowerShell
 ##### Run the application
 1. Open another terminal instance and `cd` to the repository root
 2. `./mvnw clean package`
-3. `java -jar target/carrtsdemo-0.0.1-SNAPSHOT.jar`
+3. `java -jar target/carpartsdemo-0.0.1-SNAPSHOT.jar`
 
 ##### Test
 Import **_carpartsdemo.postman_collection.json_** collection into Postman and experiment.
